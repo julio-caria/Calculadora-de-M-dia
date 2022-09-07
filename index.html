@@ -25,6 +25,7 @@
           id="student-name"
           type="text"
           placeholder="Informe o nome do Aluno..."
+          value=""
         />
 
         <input
@@ -32,27 +33,33 @@
           id="primeiroBimestre"
           type="text"
           placeholder="Primeira Nota"
+          value=""
         />
         <input
           class="field field-nota"
           id="segundoBimestre"
           type="text"
           placeholder="Segunda Nota"
+          value=""
         />
         <input
           class="field field-nota"
           id="terceiroBimestre"
           type="text"
           placeholder="Terceira Nota"
+          value=""
         />
         <input
           class="field field-nota"
           id="quartoBimestre"
           type="text"
           placeholder="Quarta Nota"
+          value=""
         />
 
-        <div class="result"></div>
+        <div class="result">
+          <p id="resposta-boletim"></p>
+        </div>
 
         <button onclick="approvedOrReproved()" class="btn">
           Calcular Média

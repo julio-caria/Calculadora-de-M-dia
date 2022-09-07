@@ -1,7 +1,20 @@
+:root {
+  --background: hsl(0, 0%, 14%);
+  --background-fields: hsl(0, 0%, 9%);
+  --color-approvedbg: hsl(87, 100%, 80%);
+  --color-reprovedbg: hsl(0, 100%, 80%);
+  --reproved: hsl(0, 74%, 70%);
+  --approved: hsl(87, 61%, 61%);
+  --whitecolor-font: hsl(0, 0%, 100%);
+  --greycolor-font: hsl(0, 0%, 80%);
+  --background-btn: hsl(93, 90%, 65%);
+  --background-btnhover: hsl(93, 80%, 61%);
+}
+
 body {
   font-family: "Roboto Mono", monospace;
   min-height: 400px;
-  background-color: #242424;
+  background-color: var(--background);
   background-size: 80vh;
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -14,12 +27,12 @@ body {
 }
 
 .page-title {
-  color: #ffffff;
+  color: var(--whitecolor-font);
   margin: 0 0 5px;
 }
 
 .page-subtitle {
-  color: #ffffff;
+  color: var(--whitecolor-font);
   margin-top: 5px;
 }
 
@@ -42,7 +55,7 @@ body {
   width: 75%;
   height: auto;
 
-  background-color: #161616;
+  background-color: var(--background-fields);
 
   padding: 24px;
   margin: 0 auto;
@@ -55,24 +68,38 @@ body {
   margin-bottom: 16px;
   height: 18px;
 
-  background-color: #242424;
+  background-color: var(--background);
 
   padding: 8px;
   border: none;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid var(--greycolor-font);
 
   font-size: 14px;
 }
 
 input {
-  color: #ccc;
+  color: var(--greycolor-font);
+}
+
+.result .alert-approved {
+  background-color: var(--color-approvedbg);
+  color: var(--reproved);
+
+  border: 1px solid var(--reproved);
+}
+
+.result .alert-reproved {
+  background-color: var(--color-reprovedbg);
+  color: var(--reproved);
+
+  border: 1px solid var(--reproved);
 }
 
 .btn {
   height: 32px;
   padding: 8px;
 
-  background-color: #a0f658;
+  background-color: var(--background-btn);
   border: none;
   margin-top: 12px;
 
@@ -84,5 +111,5 @@ input {
 }
 
 .btn:hover {
-  background-color: #94eb4b;
+  background-color: var(--background-btnhover);
 }
