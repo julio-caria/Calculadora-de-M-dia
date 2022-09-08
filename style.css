@@ -3,8 +3,8 @@
   --background-fields: hsl(0, 0%, 9%);
   --color-approvedbg: hsl(87, 100%, 80%);
   --color-reprovedbg: hsl(0, 100%, 80%);
-  --reproved: hsl(0, 74%, 70%);
-  --approved: hsl(87, 61%, 61%);
+  --reproved: hsl(0, 55%, 46%);
+  --approved: hsl(87, 49%, 50%);
   --whitecolor-font: hsl(0, 0%, 100%);
   --greycolor-font: hsl(0, 0%, 80%);
   --background-btn: hsl(93, 90%, 65%);
@@ -52,7 +52,8 @@ body {
 .container-fields {
   margin-top: 64px;
 
-  width: 75%;
+  min-width: 30%;
+  max-width: 45%;
   height: auto;
 
   background-color: var(--background-fields);
@@ -81,18 +82,22 @@ input {
   color: var(--greycolor-font);
 }
 
-.result .alert-approved {
+.alert-approved {
   background-color: var(--color-approvedbg);
+  color: var(--approved);
+
+  border: 1px solid var(--approved);
+}
+
+.alert-reproved {
+  background-color: var(--color-reprovedbg);
   color: var(--reproved);
 
   border: 1px solid var(--reproved);
 }
 
-.result .alert-reproved {
-  background-color: var(--color-reprovedbg);
-  color: var(--reproved);
-
-  border: 1px solid var(--reproved);
+.bold {
+  font-weight: bold;
 }
 
 .btn {
