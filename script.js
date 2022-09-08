@@ -8,8 +8,6 @@ function approvedOrReproved() {
   var nota3 = document.querySelector("#terceiroBimestre").value;
   var nota4 = document.querySelector("#quartoBimestre").value;
 
-  var button = document.querySelector(".btn");
-
   var media =
     (parseFloat(nota1) +
       parseFloat(nota2) +
